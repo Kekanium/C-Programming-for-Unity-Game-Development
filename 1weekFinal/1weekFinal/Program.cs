@@ -33,8 +33,8 @@ namespace _1weekFinal
             bY = float.Parse(Console.ReadLine());
 
             //temp calculation module
-            dX = aX - bX;
-            dY = aY - bY;
+            dX = bX - aX;
+            dY = bY - aY;
 
             //distance module
             dist = (float)Math.Sqrt(Math.Pow(dX, 2) + Math.Pow(dY, 2));
