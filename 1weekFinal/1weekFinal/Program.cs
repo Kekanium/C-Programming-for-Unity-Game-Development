@@ -19,6 +19,9 @@ namespace _1weekFinal
 
             float dX, dY; //temp variables
 
+            //Welcoming user
+            Console.WriteLine("Welcome.");
+            Console.WriteLine("This application will calculate distance and angle between two points");
             //Input module
             Console.Write("Point 1 X:");
             aX = float.Parse(Console.ReadLine());
@@ -37,7 +40,7 @@ namespace _1weekFinal
             dist = (float)Math.Sqrt(Math.Pow(dX, 2) + Math.Pow(dY, 2));
 
             //angle module
-            angle = (float)Math.Atan2((double)dY, (double)dX) * 180 / (float)Math.PI;
+            angle = (float)(Math.Atan2((double)dY, (double)dX) * 180 / Math.PI);
             //Output module
             Console.WriteLine("With those inputs, the expected outputs are:");
             Console.WriteLine("Distance between points: " + dist);
